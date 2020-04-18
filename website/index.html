@@ -22,7 +22,7 @@
     }
     .opt-nav:hover {
         transition: 0.7s;
-        background: #333;
+        background: #111;
         color:#fff;
 
     }
@@ -35,6 +35,20 @@
         display: none;
     }
 
+    #education hr{
+        background:#eee;
+    }
+
+    #education a {
+        color:white;
+    }
+
+    #education a:hover{
+        cursor: pointer;
+        color:#ddd;
+    }
+
+
     #portfolio{
         display: none;
     }
@@ -45,10 +59,10 @@
 
     #main{
         margin:1%;
-        padding:2%;
+        padding:3%;
         color:white;
-        background: #000;
-        height:300px;
+        background: #111;
+        height:auto;
     }
 
     .footer h6{
@@ -106,7 +120,43 @@
 
 <div id="education">
 
-    This is the education page 
+    <!-- <h2 class="title">Education</h2> -->
+
+    <br>
+    <div class="row">
+        <div class="col-md-4">
+            <h5>- Bsc. Computer Science</h5> 
+            <h6> at <a onclick="redirect()">Federal University of Ceara</a></h6> 
+        </div>
+
+        <div class="col-md-4">
+            <h6>Main Practical Content</h6>      
+            <hr/>
+                <ul>
+                    <li>Data structure</li>
+                    <li>Functional Programming</li>
+                    <li>Web Development</li>
+                    <li>Compilers</li>
+                    <li>Artificial Inteligence</li>
+                    <li>Data Science</li>
+                </ul>
+        </div>
+
+        <div class="col-md-4">
+            <h6 class="sub-title">Main Theoretical Content</h6> 
+            <hr/>
+            <ul>
+                <li>Computer Architecture</li>
+                <li>Software Engineering</li>
+                <li>Computer Theory</li>
+                <li>Project and Algoritm Analysis</li>
+                <li>Operational Systems</li>
+                <li>Distributed Systems</li>
+            </ul> 
+        </div>
+
+    </div> 
+    
 
 </div>
 
@@ -132,7 +182,12 @@
 <script>
     previousContent = ''
     function mount(element){
-    
+        
+        if(element === 'about'){
+            document.getElementById('main').style.transition = '';
+        }
+
+
         document.getElementById("main").innerHTML = '';
         document.getElementById("main").innerHTML = document.getElementById(element).outerHTML;
         if(previousContent !== ''){
@@ -143,6 +198,13 @@
         document.getElementById(element).style.display = 'contents';
         document.getElementById(element).style.transition = '0.7s';
 
+    }
+
+    function redirect(){
+        window.open(
+            'http://www.ufc.br/',
+            '_blank' // <- This is what makes it open in a new window.
+            );
     }
 
 </script>
