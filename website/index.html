@@ -29,12 +29,20 @@
 
     }
 
-    #about{
+    #experiences{
         display: none;
     }
 
     #education{
         display: none;
+    }
+
+    #expertises{
+        display: none;
+    }
+
+    #expertises hr{
+        background-color: #fff;
     }
 
     #education hr{
@@ -71,9 +79,7 @@
 
 
     #contact #email {
-        padding:3%;
-        background: rgb(2,0,36);
-        background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(2,2,50,1) 60%, rgba(2,47,94,1) );
+
         color:#fff;
         text-align: center;
 
@@ -113,15 +119,15 @@
 
 <div class="container">
     <div class="row text-center">
-        <div class="col-md-2 opt-nav" onclick="mount('about')">
-            <h5> About me </h5>
+        <div class="col-md-2 opt-nav" onclick="mount('experiences')">
+            <h5> Experiences </h5>
         </div>
-        
+
         <div class="col-md-2 opt-nav" onclick="mount('education')">
             <h5> Education </h5>
         </div>
 
-        <div class="col-md-2 opt-nav" onclick="mount('portfolio')">
+        <div class="col-md-2 opt-nav" onclick="mount('expertises')">
             <h5> Expertises </h5>
         </div>
         
@@ -149,9 +155,9 @@
 
 
 <!-- Dynamic pages -->
-<div id="about">
+<div id="experiences">
 
-    This is the about me page 
+    This is the Experiences page 
 
 </div>
 
@@ -197,6 +203,118 @@
 
 </div>
 
+<div id="expertises">
+
+    <div class="row">
+        <div class="col-md-3">
+            <h6>Front-end</h6>
+            <hr/>
+            <ul>
+                <li>HTML5 / CSS3</li>
+                <li>Javascript</li>
+                
+            </ul>
+        </div>
+
+        <div class="col-md-3">
+            <h6>Back-end</h6>
+            <hr/>
+            <ul>
+                <li>PHP</li>
+                <li>Javascript</li>
+                <li>Java</li>
+                <li>Python</li>
+            </ul>
+        </div>
+
+        <div class="col-md-3">
+            <h6>Data Science & A.I </h6>
+            <hr/>
+            <ul>
+                <li>Python</li>
+                <li>Numpy</li>
+                <li>Pandas</li>
+                <li>MatplotLib</li>
+                <li>Statistics</li>
+                <li>Neural Networks</li>
+                <li>Keras</li>
+            </ul>
+        </div>
+
+        <div class="col-md-3">
+            <h6>Desktop & Mobile</h6>
+            <hr/>
+            <ul>
+                <li>JavaFX</li>
+                <li>Android Native</li>
+                <li>React Native</li>
+
+            </ul>
+        </div>
+
+
+    </div>
+
+    <div class="row">
+        <div class="col-md-3">
+            <h6>Front-end Frameworks</h6>
+            <hr/>
+            <ul>
+                <li>Bootstrap</li>
+                <li>Materialize</li>
+                <li>React.js</li>
+                <li>Angular.js</li>
+            </ul>
+
+        </div>
+
+        <div class="col-md-3">
+            <h6>Back-end Frameworks</h6>
+            <hr/>
+            <ul>
+                <li>Symfony</li>
+                <li>Codeigniter</li>
+                <li>Node.js</li>
+                <li>Spring</li>
+                <li>Flask</li>
+            </ul>
+
+        </div>
+
+        <div class="col-md-3">
+            <h6>Databases</h6>
+            <hr/>
+            <ul>
+                <li>MySQL</li>
+                <li>SQLite</li>
+            </ul>
+        </div>
+
+        <div class="col-md-3">
+            <h6>Other Tech Stack</h6>
+            <hr/>
+            <ul>
+                <li>C Language</li>
+                <li>C# Language</li>
+                <li>Git</li>
+                <li>Gradle</li>
+                <li>Maven</li>
+                <li>Composer</li>
+                <li>Npm</li>
+                <li>Linux</li>
+            </ul>
+        </div>
+
+    </div>
+
+</div>
+
+<div id="github">
+
+    This is the portfolio page
+
+</div>
+
 <div id="portfolio">
 
     This is the portfolio page
@@ -231,12 +349,11 @@
         
 
         if(element === 'contact'){
-            document.getElementById('main').style.background = 'none';
+            document.getElementById('main').style.background = 'rgb(2,0,36);linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(2,2,50,1) 60%, rgba(2,47,94,1) );';
             document.getElementById(element).style.color = '#aaa';
         }
         if(element === 'education'){
-            document.getElementById('main').style.background = 'rgb(2,0,36)';
-            document.getElementById('main').style.background =  'linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(2,2,50,1) 60%, rgba(2,47,94,1) );';
+            document.getElementById('main').style.background = 'rgb(2,0,36);linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(2,2,50,1) 60%, rgba(2,47,94,1) );';
             
             document.getElementById(element).style.color = '#fff';
         }
