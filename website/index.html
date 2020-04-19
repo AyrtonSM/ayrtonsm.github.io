@@ -19,10 +19,12 @@
         color:#333;
         padding:1%;
         cursor: pointer;
+        border-radius:5px;
     }
     .opt-nav:hover {
         transition: 0.7s;
-        background: #111;
+        background: rgb(2,0,36);
+        background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(2,2,50,1) 60%, rgba(2,47,94,1) );
         color:#fff;
 
     }
@@ -61,8 +63,27 @@
         margin:1%;
         padding:3%;
         color:white;
-        background: #111;
+        background: rgb(2,0,36);
+        background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(2,2,50,1) 60%, rgba(2,47,94,1) );
         height:auto;
+        border-radius: 5px;
+    }
+
+
+    #contact #email {
+        padding:3%;
+        background: rgb(2,0,36);
+        background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(2,2,50,1) 60%, rgba(2,47,94,1) );
+        color:#fff;
+        text-align: center;
+
+    }
+
+    #contact #line {
+        padding:3%;
+        color:#111;
+        text-align: center;
+
     }
 
     .footer h6{
@@ -72,6 +93,11 @@
         
     }
 
+    .jumbotron{
+        color:#fff;
+        background: rgb(2,0,36);
+        background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(2,2,50,1) 60%, rgba(2,47,94,1) );
+    }
 </style>
 </head>
 
@@ -166,10 +192,18 @@
 
 </div>
 
-<div id="contact">
+<div id="contact">  
 
-    This is the contact page 
-
+    <div id="email" class="row">
+        <div class="col-md-6">
+            <h5>EMAIL</h5><br>
+            <h6 ></h6> ayrtonitsolution@gmail.com </h6>
+        </div>
+        <div class="col-md-6">
+            <h5 style="text-align: center;"> LINE </h5>
+            <img class="img-responsive" src="img/line_id.jpg" width="150px" height="150px"/>
+        </div>
+    </div>
 </div>
 
 <div class="footer">
@@ -179,14 +213,22 @@
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>    
+<sc>
 <script>
     previousContent = ''
     function mount(element){
         
-        if(element === 'about'){
-            document.getElementById('main').style.transition = '';
-        }
 
+        if(element === 'contact'){
+            document.getElementById('main').style.background = 'none';
+            document.getElementById(element).style.color = '#aaa';
+        }
+        if(element === 'education'){
+            document.getElementById('main').style.background = 'rgb(2,0,36)';
+            document.getElementById('main').style.background =  'linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(2,2,50,1) 60%, rgba(2,47,94,1) );';
+            
+            document.getElementById(element).style.color = '#fff';
+        }
 
         document.getElementById("main").innerHTML = '';
         document.getElementById("main").innerHTML = document.getElementById(element).outerHTML;
