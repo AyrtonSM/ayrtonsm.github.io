@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="css/style.css">
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#">Ayrton Sousa</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#technical-skills">Technical Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#work-experience">Work Experience</a>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="#">Side Projects</a>
+            </li> -->
+            <li class="nav-item">
+              <a class="nav-link" href="#languages">Languages</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link btn btn-primary text-light" href="docs/ayrton_cv_english.pdf"> Get CV </a>
+            </li>
+
+          </ul>
+        
+        </div>
+      </nav>
+    <div class="content">
+        <div id="technical-skills">
+            <h3>Technical Skills</h3>
+            <hr style="background:#fff;"/>
+            <div class="row">
+                <div class="col-md-1">
+                    <span class="stack-title">Front-end</span><br>
+                    <div id="frontend-languages">
+                        <ul id="frontend-languages-list"></ul>
+                    </div>
+                </div>
+                <div class="col-md-1">
+                    <span class="stack-title">Back-end</span><br>
+                    <div id="backend-languages">
+                        <ul id="backend-languages-list"></ul>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <span  class="stack-title">Databases & ORM</span><br>
+                    <div id="database-tools">
+                        <ul id="database-tools-list"></ul>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <span class="stack-title">Frameworks</span><br>
+                    <div id="frameworks">
+                        <ul id="frameworks-list"></ul>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <span class="stack-title">Package Management</span><br>
+                    <div id="package-manegement">
+                        <ul id="package-manegement-list"></ul>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <span class="stack-title">Clouds</span><br>
+                    <div id="clouds">
+                        <ul id="clouds-list"></ul>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <span class="stack-title">Other Tech</span><br>
+                    <div id="other">
+                        <ul id="other-list"></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="work-experience"> 
+            <h3>Work Experience</h3>
+            <hr style="background:#fff;"/>
+            <div class="row" id="work-experience-list"></div>
+           
+        </div>
+
+        <div id="languages">
+            <h3>Languages</h3>
+            <hr style="background:#fff;"/>
+            <div class="row">
+                <div class="col-md-2">
+                    <span class="language-title">Português (BR) <img src="img/brasil-flag.png" width="21" height="14"> </span>
+                    <div class="level-description">
+                        <ul id="portuguese-level-description-list"></ul>
+                    </div>
+                </div>
+    
+                
+                <div class="col-md-2">
+                    <span class="language-title">Español <img src="img/spain-flag.png" width="21" height="14"></span>
+                    <div class="level-description">
+                        <ul id="spanish-level-description-list"></ul>
+                    </div>
+                </div>
+                
+                <div class="col-md-2">
+                    <span class="language-title">English <img src="img/great-britain-flag.jpg" width="21" height="14"></span>
+                    <div class="level-description">
+                        <ul id="english-level-description-list"></ul>
+                    </div>
+                </div>
+
+                <div class="col-md-2">
+                    <span class="language-title">日本語 <img src="img/japan-flag.png" width="21" height="14"></span>
+                    <div class="level-description">
+                        <ul id="japanese-level-description-list"></ul>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+
+        <div id="contact">
+            <h3>Contact</h3>
+            <hr style="background:#fff;"/>
+            Email : ayrtonitsolution@gmail.com <br>
+            Github : <a href="https://github.com/AyrtonSM" target="blank"> https://github.com/AyrtonSM </a><br>
+            LinkedIn : <a href="https://www.linkedin.com/in/ayrton-marinho/" target="blank"> https://www.linkedin.com/in/ayrton-marinho </a> <br>
+        </div>
+
+        <p style="text-align: center;">&reg; All Rights Reserved to <a href="https://www.linkedin.com/in/ayrton-marinho/"> Ayrton Sousa </a> </p>
+    </div>
+</body>
+
+<script src="js/skills.js"></script>
+<script>
+    loadViews()
+</script>
+
+</html>

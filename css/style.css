@@ -1,0 +1,33 @@
+* {
+    margin:0;
+    padding:1;
+    
+}
+
+body {
+    background: linear-gradient(180deg, rgb(41, 41, 41), #000) no-repeat;
+    color:#fff;
+    
+}
+.stack-title {
+    padding:1%;
+    margin-bottom:4%;
+}
+.stack-title, .language-title {
+    font-weight: 800;
+    text-align: left;
+
+}
+.content{
+    padding: 4%;
+}
+
+#technical-skills, #work-experience, #languages {
+    margin-bottom: 2%;
+}
+
+.card {
+    background: transparent;
+    margin-bottom: 2%;
+    height: 200px;
+}
