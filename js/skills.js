@@ -140,16 +140,16 @@ function getSpokenLanguagesWithLevels(){
 
 function getWorkExperiences(){
     return [
-        {
-            title : "Software Development Manager",
-            company : "Samex LLC",
-            interval : "Sep/2021 - Jan/2022",
-            description : "Responsible for building custom APIs using PHP, Javascript, Python, Java and working with third-party API implementation to create customized software, code review using github and showing advice on client’s software architecture. I’ve also been responsible for architecting and building mainly VueJS, Vuex, Bootstrap frameworks. In regards to databases, I’ve been architecting databases and managing their data."
-        },
+//         {
+//             title : "Software Development Manager",
+//             company : "Samex LLC",
+//             interval : "Sep/2021 - Jan/2022",
+//             description : "Responsible for building custom APIs using PHP, Javascript, Python, Java and working with third-party API implementation to create customized software, code review using github and showing advice on client’s software architecture. I’ve also been responsible for architecting and building mainly VueJS, Vuex, Bootstrap frameworks. In regards to databases, I’ve been architecting databases and managing their data."
+//         },
         {
             title : "Senior Software Engineer",
             company : "Samex LLC",
-            interval : "Sep/2020 - Sep/2021",
+            interval : "Sep/2020 - Jan/2022",
             description : "Responsible for building custom APIs using PHP, Javascript, Python, Java and working with third-party API implementation to create customized software, code review using github and showing advice on client’s software architecture. I’ve also been responsible for architecting and building mainly VueJS, Vuex, Bootstrap frameworks. In regards to databases, I’ve been architecting databases and managing their data."
         },
         {
